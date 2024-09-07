@@ -1,0 +1,190 @@
+body {
+    background-image: url("bg-image.svg");
+    text-align: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    padding: 60px;
+    color: #F8FAFC;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.container {
+    background-color: rgba(205, 213, 224, 0.5); 
+    width: 70%;
+    max-width: 100%;
+    border-radius: 16px;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.form-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+#text-form, #text-form2 {
+    flex: 1; /* Makes both forms take up equal space */
+    min-width: 300px; /* Ensures forms don't become too small */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input, .input1{
+    width: 100%;
+    max-width: 350px;
+    height: 60px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    outline: none;
+    border-color: #f9f9f9;
+}
+
+.input3,.input4 {
+    width: 100%;
+    max-width: 350px;
+    height: 60px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    outline: none;
+    border-color: #f9f9f9;
+    margin-top: 4.5px;
+}
+.input1,.input4{
+    font-weight: bold;
+}
+
+.input2 {
+    width: 45.5rem;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    outline: none;
+    border-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+
+label {
+    display: block;
+    text-align: left;
+}
+
+.name, .company, .message {
+    margin-bottom: 5px;
+}
+button{
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.25rem;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-color: #f9f9f9;
+    font-weight: bold;
+    color: #4036A9;
+}
+/* Untuk layar dengan lebar maksimal 1200px (Tablet atau lebih kecil) */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+    .input, .input1, .input2, .input3, .input4 {
+        max-width: 100%;
+    }
+
+    .input2 {
+        width: 100%;
+    }
+}
+
+/* Untuk layar dengan lebar maksimal 768px (Ponsel besar dan tablet kecil) */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .input, .input1, .input2, .input3, .input4 {
+        max-width: 100%;
+        height: 50px;
+    }
+
+    .input2 {
+        height: 150px;
+    }
+
+    button {
+        height: 60px;
+        font-size: 1rem;
+    }
+}
+
+/* Untuk layar dengan lebar maksimal 480px (Ponsel kecil) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+    .form-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input, .input1, .input2, .input3, .input4 {
+        max-width: 100%;
+        height: 45px;
+    }
+
+    .input2 {
+        height: 120px;
+    }
+
+    button {
+        height: 50px;
+        font-size: 0.875rem;
+    }
+}
+
+
